@@ -16,6 +16,12 @@ class Component {
 const composer = new Component("Mozart");
 composer.render();
 
+// arrayNew = ["Wolfgang", "Amadé", "Mozart"];
+// arrayNew.forEach(function (i) {
+//   const blaBla = new Component(i);
+//   console.log(blaBla.render());
+// });
+
 // 2. Create a child class called UserCard that extends Component.
 // The UserCard should take in only one constructor parameter called "user".
 // Expect the user to be an object with "name", "imageUrl" and "email" properties.
@@ -90,7 +96,7 @@ array.map(function (user) {
 // 5. Using .forEach(), call the render method of your instances.
 
 array.forEach(function (i) {
-  const newRender = new Component(i);
+  const newRender = new Component(i.name);
   console.log(newRender.render());
 });
 
